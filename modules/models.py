@@ -12,7 +12,7 @@ class Client:
         self.__cpf = cpf
         self.__money = 0
         self.__ip = ip
-        self.filename_ = f"db.db"
+        self.filename_ = f"mybank_database.db"
         self.database_instance = database.Connection(self.filename_)
         self.database_instance.create_user(name, cpf)
     @property
